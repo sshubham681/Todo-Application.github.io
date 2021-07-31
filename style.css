@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+  }
+  .container {
+    margin: 80px auto;
+    max-width: 400px;
+    background-color:#516f7a;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  body {
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(120deg, #eb9f12, #ebe712)
+  }
+  
+  .container header {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .container .inputField {
+    display: flex;
+    height: 45px;
+    margin: 20px 0;
+  }
+  .inputField input {
+    width: 100%;
+    
+    border: 1px solid;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+  }
+  .inputField button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(109, 187, 8, 0.863);
+    color:aliceblue;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    /* opacity: 0.6;
+    pointer-events: none; */
+  }
+  /* .inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+  } */
+  .inputField button:active {
+    font-size: 19px;
+  }
+  .container .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    background: #dae0dd;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+  }
+  .todoList li span {
+    position: absolute;
+    right: -145px;
+    background: #e74c3c;
+    color: #fff;
+    width: 85px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #edit{
+    margin-right: 20px;
+    
+  }
+  .todoList li:hover span {
+    right: 0px;
+  }
+  .container .footer {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer button {
+    border: none;
+    outline: none;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+
+  }
+  .footer button.active{
+    opacity: 1;
+    font-size: 14px;
+    pointer-events: auto;
+  }
+
+  ::-webkit-scrollbar {
+     -webkit-appearance: none;
+      width: 6px;
+      height: 6px;
+      border: 1px solid #F5F5FA;
+      border-radius: 6px; 
+    } 
+  ::-webkit-scrollbar-thumb {
+     border-radius: 6px; 
+     background-color: #8181A5; 
+     box-shadow: 0 0 1px rgba(255, 255, 255, .5); 
+    }
